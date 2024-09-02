@@ -27,66 +27,73 @@
     </style>
   </head>
   <body class="bg-blue-100">
-    <div class="flex items-center justify-center min-h-screen bg-Magnolia">
-      <div class="grid grid-cols-3 m-4 bg-white p-4 rounded-lg shadow-lg">
+    <div class="md:flex items-center justify-center min-h-screen">
+      <div class="md:grid md:grid-cols-3 block md:p-4 p-0 rounded-lg relative">
         <!-- Sidebar -->
         <div class="relative">
-          <!-- Step on the side image -->
-          <div class="absolute top-10 left-10 flex flex-col space-y-4">
+          <img
+            src="assets/images/bg-sidebar-mobile.svg"
+            alt=""
+            class="flex md:hidden w-full relative"
+          />
+
+          <div
+            class="absolute md:top-10 top-8 md:left-10 left-12 flex md:flex-col flex-row md:space-y-4 space-x-2 md:space-x-0 text-center gap-4"
+          >
             <!-- Step 1 -->
             <div class="flex items-center space-x-2">
               <button
-                class="w-10 h-10 rounded-full border-2 border-light-blue flex items-center justify-center text-white bg-light-blue"
+                class="w-12 h-12 rounded-full border-2 border-white flex items-center justify-center text-white bg-light-blue"
               >
                 1
               </button>
-              <span class="text-white font-medium">Step 1</span>
+              <span class="text-white font-medium hidden md:flex">Step 1</span>
             </div>
             <!-- Step 2 -->
             <div class="flex items-center space-x-2">
               <button
-                class="w-10 h-10 rounded-full border-2 border-light-blue flex items-center justify-center text-light-blue"
+                class="w-12 h-12 rounded-full border-2 border-white flex items-center justify-center text-light-blue"
               >
                 2
               </button>
-              <span class="text-white font-medium">Step 2</span>
+              <span class="text-white font-medium hidden md:flex">Step 2</span>
             </div>
             <!-- Step 3 -->
             <div class="flex items-center space-x-2">
               <button
-                class="w-10 h-10 rounded-full border-2 border-light-blue flex items-center justify-center text-light-blue"
+                class="w-12 h-12 rounded-full border-2 border-white flex items-center justify-center text-light-blue"
               >
                 3
               </button>
-              <span class="text-white font-medium">Step 3</span>
+              <span class="text-white font-medium hidden md:flex">Step 3</span>
             </div>
             <!-- Step 4 -->
             <div class="flex items-center space-x-2">
               <button
-                class="w-10 h-10 rounded-full border-2 border-light-blue flex items-center justify-center text-light-blue"
+                class="w-12 h-12 rounded-full border-2 border-white flex items-center justify-center text-light-blue"
               >
                 4
               </button>
-              <span class="text-white font-medium">Step 4</span>
+              <span class="text-white font-medium hidden md:flex">Step 4</span>
             </div>
           </div>
 
-          <!--The Side Image -->
           <img
             src="/assets/images/bg-sidebar-desktop.svg"
             alt=""
-            class="object-cover w-full h-full"
+            class="object-cover w-full h-full hidden md:block"
           />
         </div>
 
-        <!-- Form -->
-        <div class="col-span-2 px-20 py-10">
-          <h1 class="text-4xl font-bold">Personal Info</h1>
+        <div
+          class="col-span-2 md:px-20 md:py-10 p-4 bg-white rounded-lg md:rounded-none shadow-lg md:shadow-none relative md:top-0 -mt-16 md:-mt-0 m-4 md:m-0"
+        >
+          <h1 class="text-4xl font-bold mt-8">Personal Info</h1>
           <p class="mt-2 text-[#d6d9e6] text-[16px]">
             Please provide your name, email address, and phone number.
           </p>
 
-          <form class="space-y-4 mt-16">
+          <form class="space-y-4 mt-8">
             <!-- Name Input -->
             <div>
               <label for="name" class="block text-gray-700 font-medium"
@@ -129,72 +136,72 @@
               />
             </div>
 
-            <!-- Nest step Button -->
-            <div class="flex justify-end">
-              <button
-                class="px-4 py-2 mt-16 bg-blue-900 text-white rounded-md hover:bg-Marine-blue/90"
-              >
-                Next Step
-              </button>
-            </div>
+            <!-- Next Step Button -->
           </form>
+
+          <div class="flex justify-end">
+            <button
+              class="px-4 py-2 mt-20 bg-blue-900 text-white rounded-md hover:bg-Marine-blue/90"
+            >
+              Next Step
+            </button>
+          </div>
         </div>
       </div>
     </div>
+  </body>
+</html>
+<!-- Sidebar start -->
 
-    <!-- Sidebar start -->
-
-    <!-- Step 1 Your info Step 2 Select plan Step 3 Add-ons Step 4 Summary
+<!-- Step 1 Your info Step 2 Select plan Step 3 Add-ons Step 4 Summary
 
     Sidebar end
 
     < Step 1 start -->
 
-    <!-- Personal info 
+<!-- Personal info 
     Name e.g. Stephen King Email Address e.g. stephenking@lorem.com Phone Number
     e.g. +1 234 567 890 Next Step -->
 
-    <!-- Step 1 end -->
+<!-- Step 1 end -->
 
-    <!-- Step 2 start -->
+<!-- Step 2 start -->
 
-    <!-- Select your plan You have the option of monthly or yearly billing. Arcade
+<!-- Select your plan You have the option of monthly or yearly billing. Arcade
     $9/mo Advanced $12/mo Pro $15/mo Monthly Yearly Go Back Next Step -->
 
-    <!-- Step 2 end -->
+<!-- Step 2 end -->
 
-    <!-- Step 3 start -->
+<!-- Step 3 start -->
 
-    <!-- Pick add-ons Add-ons help enhance your gaming experience. Online service
+<!-- Pick add-ons Add-ons help enhance your gaming experience. Online service
     Access to multiplayer games +$1/mo Larger storage Extra 1TB of cloud save
     +$2/mo Customizable Profile Custom theme on your profile +$2/mo Go Back Next
     Step -->
 
-    <!-- Step 3 end -->
+<!-- Step 3 end -->
 
-    <!-- Step 4 start -->
+<!-- Step 4 start -->
 
-    <!-- Finishing up Double-check everything looks OK before confirming. -->
+<!-- Finishing up Double-check everything looks OK before confirming. -->
 
-    <!-- Dynamically add subscription and add-on selections here -->
+<!-- Dynamically add subscription and add-on selections here -->
 
-    <!-- Total (per month/year) Go Back Confirm -->
+<!-- Total (per month/year) Go Back Confirm -->
 
-    <!-- Step 4 end -->
+<!-- Step 4 end -->
 
-    <!-- Step 5 start -->
+<!-- Step 5 start -->
 
-    <!-- Thank you! Thanks for confirming your subscription! We hope you have fun
+<!-- Thank you! Thanks for confirming your subscription! We hope you have fun
     using our platform. If you ever need support, please feel free to email us
     at support@loremgaming.com. -->
 
-    <!-- Step 5 end -->
+<!-- Step 5 end -->
 
-    <!-- <div class="attribution">
+<!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div> -->
-  </body>
-</html>
